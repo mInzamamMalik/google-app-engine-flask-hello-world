@@ -1,21 +1,27 @@
 
-# https://github.com/GoogleCloudPlatform/python-docs-samples/blob/5970e991091034cd0c71654476230b035d32f19d/appengine/standard_python3/building-an-app/building-an-app-1/app.yaml
 
-## standard env
-runtime: python311
-service: default
-# entrypoint: gunicorn -b :$PORT main:gunicorn_app
+# working in standard env
+runtime: python39
+service: abc
+
+handlers:
+- url: .*
+  script: auto
+
+entrypoint: gunicorn -b :$PORT main:app
 
 
-
-## flex env
+## env flex not working in free tier
 # runtime: python
-# service: default
-
-# env: flex
-# entrypoint: gunicorn -b :$PORT main:gunicorn_app
-
 # runtime_config:
 #     operating_system: "ubuntu18"
 #     runtime_version: "3.9"
 
+# service: abcflex
+# env: flex
+
+# handlers:
+# - url: /.*
+#   script: auto
+
+# entrypoint: gunicorn -b :$PORT main:app
