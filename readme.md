@@ -1,4 +1,4 @@
-# deploy on google app rngine
+# deploy on Google App Engine
 
 
 `gcloud config set app/cloud_build_timeout 900` (seconds) to increase buildtime limit in flex env, this will not work in standard env, default value 600seconds
@@ -23,7 +23,7 @@ Learn more (https://cloud.google.com/appengine/pricing)
 
 
 
-# deploy on google Compute engine
+# deploy on Google Compute Engine
 
 https://amanranjanverma.medium.com/run-flask-app-on-gcp-compute-engine-vm-instance-de4aea60a6fe
 
@@ -39,4 +39,13 @@ cd google-app-engine-flask-hello-world/
 
 pip install -r ./requirements.txt
 python3 main.py
+
+
+copy external ip of instance and open it in new browser tab like this `http://104.999.999.222:3003/` ans see flask app running in production
+
+extras:
+to download any file from internet in ssh terminal, goto folder where you wanted it to be downloaded and run following command:
+
+wget -O fileName.txt https://firebasestorage.googleapis.com/v0/b/sysborg-air.appspot.com/o/model%2Fpytorch_model.bin?alt=media&token=5eaa3b0d-cc85-4abf-aff5-8a1d2799dd78
+
 
