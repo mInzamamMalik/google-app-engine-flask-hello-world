@@ -46,6 +46,7 @@ copy external ip of instance and open it in new browser tab like this `http://10
 extras:
 to download any file from internet in ssh terminal, goto folder where you wanted it to be downloaded and run following command:
 
+sudo apt-get install wget
 wget -O fileName.txt https://firebasestorage.googleapis.com/v0/b/sysborg-air.appspot.com/o/model%2Fpytorch_model.bin?alt=media&token=5eaa3b0d-cc85-4abf-aff5-8a1d2799dd78
 
 
