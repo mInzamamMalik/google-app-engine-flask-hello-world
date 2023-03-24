@@ -27,6 +27,16 @@ Learn more (https://cloud.google.com/appengine/pricing)
 
 https://amanranjanverma.medium.com/run-flask-app-on-gcp-compute-engine-vm-instance-de4aea60a6fe
 
+after creating the machine open ssh in browser window and run following command to setup machine for the first time:
 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install git
+sudo apt-get install python3-pip
 
+git clone https://github.com/mInzamamMalik/google-app-engine-flask-hello-world.git
+cd google-app-engine-flask-hello-world/
+
+pip install -r ./requirements.txt
+python3 main.py
 
