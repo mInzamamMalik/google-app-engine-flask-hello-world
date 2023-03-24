@@ -1,3 +1,4 @@
+# deploy on google app rngine
 
 
 `gcloud config set app/cloud_build_timeout 900` (seconds) to increase buildtime limit in flex env, this will not work in standard env, default value 600seconds
@@ -18,4 +19,14 @@ App Engine free quota in free tier
 The Google Cloud Free Tier is available only for the Standard Environment.
 
 Learn more (https://cloud.google.com/appengine/pricing)
+
+
+
+
+# deploy on google Compute engine
+
+https://amanranjanverma.medium.com/run-flask-app-on-gcp-compute-engine-vm-instance-de4aea60a6fe
+
+
+
 
